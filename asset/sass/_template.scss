@@ -1,0 +1,318 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: #EFEFEF;
+}
+
+header{
+  width: 100%;
+
+  .background-fixed{
+    min-height: 520px;
+    width: 100%;
+    background: url('../images/background.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 70%;
+    position: relative;
+    .override-shadow{
+      background-color: rgba(#242832, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+  .menu{
+    padding: 20px auto;
+    color: white;
+    transition: all 0.4s linear;
+
+    ul{
+      float: right;
+      padding: 0;
+      list-style: none;
+      margin: 20px auto;
+      li{
+        padding: 5px 0px;
+        margin: 0 12px;
+        float: left;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+
+        &.active{
+          border-bottom: 3px solid $brand-success;
+        }
+      }
+    }
+
+    .logo{
+      margin: 20px auto;
+      font-size: 1.4em;
+      span{
+        color: $brand-success;
+        text-transform: uppercase;
+      }
+    }
+
+    &.fixed{
+      background: white;
+      color: #373a3c;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      z-index: 999;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    }
+  }
+}
+
+.container-override{
+  width: 960px;
+}
+
+.about{
+  margin-top: -280px;
+  min-height: 360px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+
+  .informations {
+
+    padding: 57px 50px 15px 50px;
+    .img-shadow {
+      position: relative;
+      max-width: 100%;
+      float: left;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .welcome-message {
+      padding-left: 28px;
+
+      .profile-info {
+
+        padding-bottom: 32px;
+        border-bottom: 1px solid #EFEFEF;
+
+        .hello {
+          text-transform: uppercase;
+          font-size: 0.9em;
+
+          span {
+
+            padding: 2px 6px;
+            background: $brand-success;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: uppercase;
+          }
+        }
+
+        .profile-title {
+          margin-top: 22px;
+          font-size: 36px;
+          line-height: 1.1;
+          font-weight: 700;
+          margin-bottom: 5px;
+
+          span {
+
+            font-weight: normal;
+          }
+        }
+
+        .profile-position {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 1.1;
+          margin-bottom: 0;
+          margin-top: 18px;
+        }
+      }
+
+      ul.profile-list {
+
+        list-style-type: none;
+        padding: 32px 0 0 0;
+        font-size: 0.9em;
+
+        li {
+          padding: 4px 0;
+          .title {
+            text-transform: uppercase;
+            width: 30%;
+            display: block;
+            float: left;
+          }
+        }
+      }
+    }
+  }
+
+  .social-network{
+    background: $brand-success;
+    padding: 30px;
+    text-align: center;
+    a{
+      font-size: 22px;
+      margin: 0 18px;
+      color: white;
+    }
+  }
+}
+
+h3.title{
+  font-size: 1.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 190px auto 25px auto;
+}
+
+.description{
+  font-size: 1.1em;
+  text-align: center;
+  width: 75%;
+  margin: 35px auto;
+
+  .btn-download{
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+}
+
+.skills{
+
+  padding: 57px 50px;
+
+  .row{
+    div{
+      strong{
+        text-transform: uppercase;
+        font-size: 0.8em;
+      }
+
+      margin-bottom: 30px;
+
+      .progress-success{
+        height: 5px;
+        background: #CDF4E4;
+      }
+    }
+  }
+}
+
+.tools{
+
+  text-align: center;
+
+  img{
+    height: 120px;
+    margin: 0 35px;
+  }
+
+}
+
+.experiences{
+
+  padding: 57px 50px 27px 50px;
+
+  .row{
+    margin-bottom: 30px;
+
+    .title{
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $brand-success;
+    }
+
+    .periode,
+    .date{
+      font-size: 0.8em;
+      padding: 4px 0;
+    }
+
+    .title-post{
+      font-weight: bold;
+    }
+    p{
+      text-align: justify;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.creations{
+
+  .row{
+    margin-top: 20px;
+  }
+  .card{
+    .card-title{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: 700;
+    }
+
+    img{
+      width: 100%;
+      height: 175px; //fix size image to remove
+    }
+
+    .card-text{
+      text-align: justify;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.contact{
+  padding: 57px 50px;
+
+  margin-bottom: 150px;
+}
+
+.message{
+  width: 90px;
+  height: 90px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  position: fixed;
+  left: 25px;
+  bottom: 25px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+  img{
+    width: 100%;
+  }
+}
+
+.block-shadow{
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}

@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "description": "Portfolio Helene Cholez <helene.cholez@gmail.com>",
+  "main": "index.js",
+  "authors": [
+    "tdubuffet <dubuffet.thibault@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.4",
+    "font-awesome": "^4.6.3"
+  }
+}
