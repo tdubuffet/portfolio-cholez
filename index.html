@@ -23,12 +23,13 @@
                         <div class="col-md-9">
 
                             <ul>
-                                <li class="active">Moi</li>
-                                <li>Compétences</li>
-                                <li>Expériences</li>
-                                <li>Formation</li>
-                                <li>Mes créations</li>
-                                <li>Contact</li>
+                                <li id="active-profil" class="active" onclick="$('html, body').animate({ scrollTop: $('#profil').offset().top +1 }, 600)">Moi</li>
+                                <li id="active-skills" onclick="$('html, body').animate({ scrollTop: $('#skills').offset().top +1 }, 600)">Compétences</li>
+                                <li id="active-tools" onclick="$('html, body').animate({ scrollTop: $('#tools').offset().top+1 }, 600)">Outils</li>
+                                <li id="active-experience" onclick="$('html, body').animate({ scrollTop: $('#experience').offset().top+1 }, 600)">Expériences</li>
+                                <li id="active-formation" onclick="$('html, body').animate({ scrollTop: $('#formation').offset().top+1 }, 600)">Formation</li>
+                                <li id="active-creation" onclick="$('html, body').animate({ scrollTop: $('#creation').offset().top+1 }, 600)">Mes créations</li>
+                                <li id="active-contact" onclick="$('html, body').animate({ scrollTop: $('#contact').offset().top+1 }, 600)">Contact</li>
                             </ul>
 
                         </div>
@@ -45,7 +46,7 @@
 <div class="container container-override">
 
 
-    <div class="about block-shadow">
+    <div class="about block-shadow" id="profil">
 
         <div class="row informations">
 
@@ -128,13 +129,15 @@
     <div class="description">
         Hello! I’m Robert Smith. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.
 
-        <a href="#" class="btn-download btn btn-outline-success">
-            Télécharger mon CV
-        </a>
+        <p>
+            <a href="#" class="btn-download btn btn-outline-success">
+                Télécharger mon CV
+            </a>
+        </p>
     </div>
 
 
-    <h3 class="title">Compétences</h3>
+    <h3 class="title" id="skills">Compétences</h3>
 
     <div class="skills block-shadow">
 
@@ -184,7 +187,7 @@
 
     </div>
 
-    <h3 class="title">Outils</h3>
+    <h3 class="title" id="tools">Outils</h3>
     <div class="tools">
 
         <img src="asset/images/1.png" />
@@ -194,7 +197,7 @@
 
 
 
-    <h3 class="title">Expériences</h3>
+    <h3 class="title" id="experience">Expériences</h3>
     <div class="experiences block-shadow">
 
         <div class="row">
@@ -267,7 +270,7 @@
 
     </div>
 
-    <h3 class="title">Formations</h3>
+    <h3 class="title" id="formation">Formations</h3>
     <div class="experiences block-shadow">
 
         <div class="row">
@@ -306,7 +309,7 @@
 
     </div>
 
-    <h3 class="title">Créations</h3>
+    <h3 class="title" id="creation">Créations</h3>
     <div class="creations">
 
         <div class="row">
@@ -375,7 +378,7 @@
     </div>
 
 
-    <h3 class="title">Contact</h3>
+    <h3 class="title" id="contact">Contact</h3>
     <div class="contact block-shadow">
 
 
