@@ -100,7 +100,7 @@ header{
 }
 
 .container-override{
-  width: 900px;
+  max-width: 900px;
 }
 
 .about{
@@ -109,6 +109,20 @@ header{
   width: 100%;
   position: relative;
   z-index: 10;
+
+  .beautiful-girl{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    padding: 0;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    margin-left: 4px;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+    }
+  }
 
   .informations {
 
