@@ -87,9 +87,19 @@ header{
   position: relative;
   z-index: 10;
 
-  .informations {
+  .super-boy {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    padding: 0;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    margin-left: 4px;
+    overflow: hidden;
+  }
 
+  .informations {
     padding: 57px 50px 15px 50px;
+
     .img-shadow {
       position: relative;
       max-width: 100%;
@@ -240,7 +250,6 @@ h3.title{
 }
 
 .experiences{
-
   padding: 57px 50px 27px 50px;
 
   .row{
@@ -261,6 +270,7 @@ h3.title{
     .title-post{
       font-weight: bold;
     }
+
     p{
       text-align: justify;
       font-size: 0.9em;
