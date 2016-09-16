@@ -4,6 +4,28 @@ body{
   font-size: 13px;
 }
 
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #EFEFEF;
+  z-index: 99;
+}
+
+#status {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -100px;
+  text-align: center;
+  font-size: 25px;
+  color: $brand-success;
+}
+
 header{
   width: 100%;
 
@@ -11,11 +33,12 @@ header{
     min-height: 520px;
     width: 100%;
     background: url('../images/background.jpg') no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     background-position: 50% 70%;
     position: relative;
     .override-shadow{
-      background-color: rgba(#242832, 0.6);
+      background-color: rgba(#242832, 0.3);
       position: absolute;
       top: 0;
       left: 0;
@@ -222,7 +245,7 @@ h3.title{
 
       .progress-success{
         height: 5px;
-        background: #CDF4E4;
+        background: lighten($brand-success, 35%);
       }
     }
   }
@@ -233,8 +256,8 @@ h3.title{
   text-align: center;
 
   img{
-    height: 120px;
-    margin: 0 35px;
+    height: 90px;
+    margin: 20px 35px;
   }
 
 }
@@ -250,6 +273,22 @@ h3.title{
       font-weight: 700;
       text-transform: uppercase;
       color: $brand-success;
+    }
+
+    ul{
+      padding: 0 0 0 0px;
+      margin-top: 15px;
+      list-style: none;
+
+      li {
+        padding-left: 1em;
+        text-indent: -.7em;
+      }
+
+      li:before {
+        content: "• ";
+        color: red; /* or whatever color you prefer */
+      }
     }
 
     .periode,

@@ -2,13 +2,21 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Héléne CHOLEZ - Portfolio</title>
+    <title>Thibault DUBUFFET - Portfolio</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="asset/compiled/master.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="asset/lib/loading/jquery.pageLoading.js"></script>
+    <script src="asset/js/main.js"></script>
 </head>
 <body>
-
+<div id="preloader">
+    <div id="status">
+        <i class="fa fa fa-circle-o-notch fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+    </div>
+</div>
 <header>
     <div class="background-fixed">
         <div class="override-shadow">
@@ -18,7 +26,7 @@
 
                     <div class="row">
                         <div class="col-md-3 logo">
-                            Hélène <span>CHOLEZ</span>
+                            Thibault <span>DUBUFFET</span>
                         </div>
                         <div class="col-md-9">
 
@@ -53,7 +61,7 @@
             <div class="col-md-4">
 
                 <div class="img-shadow">
-                    <img src="asset/images/profil.jpg" alt="Hélène CHOLEZ"/>
+                    <img src="asset/images/profil.jpg" alt="Thibault DUBUFFET"/>
                 </div>
 
             </div>
@@ -61,15 +69,15 @@
             <div class="col-md-8 welcome-message">
 
                 <div class="profile-info">
-                    <div class="hello"><span>Bonjour</span></div>
-                    <h1 class="profile-title"><span>Je suis</span> Hélène Cholez</h1>
-                    <h2 class="profile-position">Intégrateur & Photographe en herbe</h2>
+                    <div class="hello"><span>Holà</span></div>
+                    <h1 class="profile-title"><span>Je suis</span> Thibault DUBUFFET</h1>
+                    <h2 class="profile-position">Développeur & Auto-Entrepreneur</h2>
                 </div>
 
                 <ul class="profile-list">
                     <li class="clearfix">
                         <strong class="title">Age</strong>
-                        <span class="cont">26 ans</span>
+                        <span class="cont">25 ans</span>
                     </li>
                     <li class="clearfix">
                         <strong class="title">Adresse</strong>
@@ -77,17 +85,12 @@
                     </li>
                     <li class="clearfix">
                         <strong class="title">Mail</strong>
-                        <span class="cont">helene.cholez [at] gmail.com</span>
+                        <span class="cont">dubuffet.thibault [at] gmail.com</span>
                     </li>
                     <li class="clearfix">
                         <strong class="title">Téléphone</strong>
-                        <span class="cont">Que sur rendez-vous :P</span>
+                        <span class="cont">Sur demande de contact</span>
                     </li>
-                    <li class="clearfix">
-                        <strong class="title">Voiture</strong>
-                        <span class="cont">Permis B</span>
-                    </li>
-
                     <li class="clearfix">
                         <strong class="title">Situtation</strong>
                         <span class="cont">Pacsé</span>
@@ -142,88 +145,132 @@
 
     <div class="skills block-shadow">
 
+        <h5>Front</h5>
+
         <div class="row">
             <div class="col-xs-6">
 
-                <strong>SASS</strong>
-                <progress class="progress progress-success" value="50" max="100"></progress>
-
-            </div>
-
-            <div class="col-xs-6">
-
-                <strong>Windev</strong>
-                <progress class="progress progress-success" value="50" max="100"></progress>
-
-            </div>
-
-            <div class="col-xs-6">
-
-                <strong>Magento</strong>
-                <progress class="progress progress-success" value="25" max="100"></progress>
-
-            </div>
-
-            <div class="col-xs-6">
-
-                <strong>Drupal</strong>
-                <progress class="progress progress-success" value="25" max="100"></progress>
-
-            </div>
-
-            <div class="col-xs-6">
-
-                <strong>Office</strong>
-                <progress class="progress progress-success" value="80" max="100"></progress>
-
-            </div>
-
-            <div class="col-xs-6">
-
-                <strong>PHP</strong>
-                <progress class="progress progress-success" value="25" max="100"></progress>
-
-            </div>
-
-            <div class="col-xs-6">
-
-                <strong>CSS</strong>
+                <strong>HTML/CSS</strong>
                 <progress class="progress progress-success" value="75" max="100"></progress>
 
             </div>
 
             <div class="col-xs-6">
 
-                <strong>Photoshop</strong>
+                <strong>Sass / Gulp / Bower</strong>
+                <progress class="progress progress-success" value="65" max="100"></progress>
+
+            </div>
+
+
+            <div class="col-xs-6">
+
+                <strong>Javascript / Jquery</strong>
                 <progress class="progress progress-success" value="70" max="100"></progress>
 
             </div>
 
+
             <div class="col-xs-6">
 
-                <strong>HTML</strong>
+                <strong>Cordova / Angular / Ionic</strong>
+                <progress class="progress progress-success" value="50" max="100"></progress>
+
+            </div>
+        </div>
+
+        <h5>Back</h5>
+
+        <div class="row">
+            <div class="col-xs-6">
+
+                <strong>PHP5 / PHP7</strong>
+                <progress class="progress progress-success" value="80" max="100"></progress>
+
+            </div>
+
+
+            <div class="col-xs-6">
+
+                <strong>MySQL / MariaDB</strong>
                 <progress class="progress progress-success" value="75" max="100"></progress>
 
             </div>
 
+
             <div class="col-xs-6">
 
-                <strong>jQuery</strong>
-                <progress class="progress progress-success" value="25" max="100"></progress>
+                <strong>MongoDB</strong>
+                <progress class="progress progress-success" value="60" max="100"></progress>
 
             </div>
 
             <div class="col-xs-6">
 
-                <strong>MySql</strong>
-                <progress class="progress progress-success" value="25" max="100"></progress>
+                <strong>ElasticSearch</strong>
+                <progress class="progress progress-success" value="60" max="100"></progress>
 
             </div>
 
             <div class="col-xs-6">
 
-                <strong>GIT</strong>
-                <progress class="progress progress-success" value="25" max="100"></progress>
+                <strong>Sphinx</strong>
+                <progress class="progress progress-success" value="50" max="100"></progress>
+
+            </div>
+
+            <div class="col-xs-6">
+
+                <strong>Symfony 2/3</strong>
+                <progress class="progress progress-success" value="76" max="100"></progress>
+
+            </div>
+
+            <div class="col-xs-6">
+
+                <strong>Zend Framework</strong>
+                <progress class="progress progress-success" value="60" max="100"></progress>
+
+            </div>
+        </div>
+
+        <h5>Server</h5>
+
+        <div class="row">
+            <div class="col-xs-6">
+
+                <strong>Debian / Ubuntu</strong>
+                <progress class="progress progress-success" value="75" max="100"></progress>
+
+            </div>
+
+
+            <div class="col-xs-6">
+
+                <strong>Server apache</strong>
+                <progress class="progress progress-success" value="80" max="100"></progress>
+
+            </div>
+
+
+            <div class="col-xs-6">
+
+                <strong>Server Nginx</strong>
+                <progress class="progress progress-success" value="85" max="100"></progress>
+
+            </div>
+
+            <div class="col-xs-6">
+
+                <strong>Config DNS</strong>
+                <progress class="progress progress-success" value="60" max="100"></progress>
+
+            </div>
+
+            <div class="col-xs-6">
+
+                <strong>Server mail</strong>
+                <progress class="progress progress-success" value="60" max="100"></progress>
 
             </div>
         </div>
@@ -235,6 +282,12 @@
 
         <img src="asset/images/1.png" />
         <img src="asset/images/photoshop-cc.svg" />
+        <img src="asset/images/cloudflare.png" />
+        <img src="asset/images/jenkins.png" />
+        <img src="asset/images/debian.png" />
+        <img src="asset/images/github.png" />
+        <img src="asset/images/gitlab.png" />
+        <img src="asset/images/trello.png" />
 
     </div>
 
@@ -246,20 +299,22 @@
         <div class="row">
 
             <div class="col-md-4">
-                <div class="title">STEPNET</div>
-                <div class="date">Juillet 2015 - Octobre 2016</div>
+                <div class="title">ARBORI - TER</div>
+                <div class="date">JUIN 2015 - AUJOURD'HUI</div>
                 <div class="periode">CDI</div>
             </div>
 
             <div class="col-md-8">
-                <div class="title-post">Intégrateur Web</div>
-                <p>
-                  Création de site static pour les intégrer dans Drupal <br>
-                  Refonte graphique des sites ARVAL (BNP) <br>
-                  Manipulation du back-office Drupal <br>
-                  Intégration de maquette <br>
-                  SASS - CSS - JS - HTML
-                </p>
+                <div class="title-post">DÉVELOPPEUR SYMFONY 3 - LEAD DEV</div>
+                <ul>
+                    <li>Développement d’une application de petite annonce en Symfony 2 puis en Symfony 3.</li>
+
+                    <li>Création d’un CMS en symfony3 pour l’élaboration de plusieurs sites vitrine du groupe TER.</li>
+
+                    <li>Création d’une application mobile Android et iOS avec Angular/Ionic/Apache Cordova.</li>
+
+                    <li>Gestion des projets et des équipes de l’entreprise.</li>
+                </ul>
             </div>
 
         </div>
@@ -267,102 +322,42 @@
         <div class="row">
 
             <div class="col-md-4">
-                <div class="title">La compagnie des animaux</div>
-                <div class="date">Mai 2014 - Mai 2015</div>
-                <div class="periode">CDD - Alternance</div>
-            </div>
-
-            <div class="col-md-8">
-                <div class="title-post">Intégrateur WEB et Développeur</div>
-                <p>
-                  Amélioration du site La Compagnie Des Animaux <br>
-                  Création d'un nouveau site DOGTEUR <br>
-                  Rédaction de documentations <br>
-                  Découpage de PSD <br>
-                  CMS Magento
-                </p>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="title">Cilpak</div>
-                <div class="date">Septembre 2013 - Mai 2014</div>
-                <div class="periode">CDD - Alternance</div>
-            </div>
-
-            <div class="col-md-8">
-                <div class="title-post">Développeur Windev</div>
-                <p>
-                  Création d'un nouveau module pour l'ajouter au logiciel <br>
-                  Rédaction documentations utilisateurs <br>
-                  Maintenance du logiciel existant <br>
-                  Utilisation de WINDEV <br>
-                  Aide utilisateurs
-                </p>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="title">Gaztransport & Technigaz</div>
-                <div class="date">Septembre 2011 - Août 2013</div>
-                <div class="periode">CDD - Alternance</div>
-            </div>
-
-            <div class="col-md-8">
-                <div class="title-post">Développeur Windev</div>
-                <p>
-                  Rédaction de documentation et utilisation de la GED <br>
-                  Gestion des tickets utilisateurs avec GLPI <br>
-                  Création d'un logiciel avec WINDEV <br>
-                  Maintenance du parc informatique <br>
-                  Aide à l'utilisateur
-                </p>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="title">Lord Of Universe</div>
-                <div class="date">Septembre 2014 - Juillet 2015</div>
-                <div class="periode">Bénévolat</div>
-            </div>
-
-            <div class="col-md-8">
-                <div class="title-post">Développeur Windev</div>
-                <p>
-                  Aide à l'amélioration du design <br>
-                  Aide au développement
-                </p>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="title">Maison de retraite les Vignes Blanches</div>
-                <div class="date">Octobre 2010 - Mai 2011</div>
+                <div class="title">GROUPE PIERRE ET VACANCES</div>
+                <div class="date">SEPTEMBRE 2012 - JUIN 2015</div>
                 <div class="periode">CDD</div>
             </div>
 
             <div class="col-md-8">
-                <div class="title-post">Aide soignante</div>
-                <p>
-                  Réconfort psychologique <br>
-                  Aide à la personne <br>
-                  Soin
-                </p>
+                <div class="title-post">DÉVELOPPEUR ZEND FRAMEWORK / SYMFONY</div>
+                <ul>
+                    <li>Développement et maintenance des sites Pierre et Vacances (Zend Framework).</li>
+                    <li>Mise en place de la méthode Intégration continue.</li>
+                    <li>Run & Maintenance sur les différents sites existants du groupe.</li>
+                </ul>
             </div>
 
         </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="title">LORD OF UNIVERSE</div>
+                <div class="date">JUIN 2010 - AUJOURD'HUI</div>
+                <div class="periode">Auto-Entrepreneur</div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="title-post">DÉVELOPPEUR ET AUTO-ENTREPRENEUR</div>
+                <ul>
+                    <li>Création et gestion d’un jeu en PHP5/MySQL sous Symfony puis Symfony 2.</li>
+                    <li>Gestion de la communauté.</li>
+                    <li>Gestion des serveurs.</li>
+                </ul>
+            </div>
+
+        </div>
+
+
 
     </div>
 
@@ -389,7 +384,7 @@
         <div class="row">
 
             <div class="col-md-4">
-                <div class="title">ETS IRIS</div>
+                <div class="title">IP Formation</div>
                 <div class="date">2011 - 2013</div>
                 <div class="periode">Formation</div>
             </div>
@@ -409,68 +404,29 @@
     <div class="creations">
 
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-6">
               <div class="card">
                   <div class="card-block">
-                      <h4 class="card-title">Un petit oiseau</h4>
+                      <h4 class="card-title">Lord Of Universe</h4>
                   </div>
-                  <img src="asset/images/creations/40.JPG" alt="Thibault">
+                  <img src="asset/images/creations/lord.png" alt="Lord Of Universe">
                   <div class="card-block">
-                      <p class="card-text">Photo dans un très joli jardin botanique en Guadeloupe </p>
+                      <p class="card-text">Création d'un jeu de science fiction par navigateur.<br /> <strong>Technologie: </strong>Symfony 1 et Symfony2 (portail), MySQL, HTML, CSS<br /><br /> <a href="https://lord-of-universe.fr">Visiter le site</a></p>
                   </div>
               </div>
           </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-block">
-                        <h4 class="card-title">Junior</h4>
+                        <h4 class="card-title">xGame-Foundation</h4>
                     </div>
-                    <img src="asset/images/creations/11.JPG" alt="Junior">
+                    <img src="asset/images/creations/xgame.png" alt="xGame Foundation">
                     <div class="card-block">
-                        <p class="card-text">Une boule de poil qui doit en avoir marre que je le prenne en photo</p>
+                        <p class="card-text">xGame-Foundation est une refonte total du jeu Lord Of Universe. Il sera disponible prochainement en version desktop, mobile et tablette. <br /> <strong>Technologie: </strong>Symfony 3, MySQL, HTML, CSS, AngularJS, Ionic, Cordova</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-block">
-                        <h4 class="card-title">Mon Geek</h4>
-                    </div>
-                    <img src="asset/images/creations/45.JPG" alt="Thibault">
-                    <div class="card-block">
-                        <p class="card-text">Une autre personne qui doit en avoir marre de mon appareil photo ... </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-8">
-              <div class="card">
-                  <div class="card-block">
-                      <h4 class="card-title">Guadeloupe 2016</h4>
-                  </div>
-                  <img src="asset/images/creations/pointe.JPG" alt="Guadeloupe 2016">
-                  <div class="card-block">
-                      <p class="card-text">Une petite plage à la pointe des Chateaux</p>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-block">
-                        <h4 class="card-title">Paris</h4>
-                    </div>
-                    <img src="asset/images/creations/13.JPG" alt="Paris">
-                    <div class="card-block">
-                        <p class="card-text">Avant la Vendée j'étais à Paris ... :-D</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </div>
@@ -546,13 +502,11 @@
     </div>
 
     <a href="tel:0662727159" class="message">
-        <img src="asset/images/profil.jpg" alt="Hélène CHOLEZ"/>
+        <img src="asset/images/profil.jpg" alt="Thibault DUBUFFET"/>
     </a>
 
 
 </div>
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="asset/js/main.js"></script>
 </body>
 </html>
