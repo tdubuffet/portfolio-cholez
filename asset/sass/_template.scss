@@ -255,6 +255,18 @@ h3.title{
   .row{
     margin-bottom: 30px;
 
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        &:before {
+          content: "• ";
+          color: $brand-success;
+        }
+      }
+    }
+
     .title{
       font-weight: 700;
       text-transform: uppercase;

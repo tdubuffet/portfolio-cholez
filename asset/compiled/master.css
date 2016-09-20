@@ -8974,50 +8974,58 @@ h3.title {
   .experiences .row {
     margin-bottom: 30px; }
     /* line 258, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+    .experiences .row ul {
+      list-style: none;
+      padding: 0; }
+      /* line 263, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+      .experiences .row ul li:before {
+        content: "• ";
+        color: #07CB79; }
+    /* line 270, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
     .experiences .row .title {
       font-weight: 700;
       text-transform: uppercase;
       color: #07CB79; }
-    /* line 264, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+    /* line 276, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
     .experiences .row .periode,
     .experiences .row .date {
       font-size: 0.8em;
       padding: 4px 0; }
-    /* line 270, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+    /* line 282, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
     .experiences .row .title-post {
       font-weight: bold; }
-    /* line 274, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+    /* line 286, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
     .experiences .row p {
       text-align: justify;
       font-size: 0.9em; }
 
-/* line 283, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+/* line 295, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
 .creations .row {
   margin-top: 20px; }
 
-/* line 287, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+/* line 299, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
 .creations .card .card-title {
   text-align: center;
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: 700; }
 
-/* line 294, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+/* line 306, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
 .creations .card img {
   width: 100%;
   height: auto; }
 
-/* line 299, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+/* line 311, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
 .creations .card .card-text {
   text-align: justify;
   font-size: 0.9em; }
 
-/* line 306, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+/* line 318, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
 .contact {
   padding: 57px 50px;
   margin-bottom: 150px; }
 
-/* line 312, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+/* line 324, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
 .message {
   width: 90px;
   height: 90px;
@@ -9028,11 +9036,77 @@ h3.title {
   left: 25px;
   bottom: 25px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }
-  /* line 323, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+  /* line 335, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
   .message img {
     width: 100%; }
 
-/* line 328, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
+/* line 340, /Volumes/Dev/portfolio-cholez/asset/sass/_template.scss */
 .block-shadow {
   background-color: #fff;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }
+
+@media screen and (max-width: 380px) {
+  /* line 2, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+  .container-override {
+    width: 100%; }
+  /* line 8, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+  .background-fixed .menu ul {
+    float: none;
+    width: 60%; }
+    /* line 12, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+    .background-fixed .menu ul li {
+      width: 100%;
+      text-align: center;
+      margin: 0; }
+  /* line 23, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+  .about .informations .welcome-message {
+    padding: 0 15px; }
+    /* line 26, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+    .about .informations .welcome-message .profile-info {
+      padding-bottom: 22px; }
+      /* line 29, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+      .about .informations .welcome-message .profile-info .hello {
+        text-align: center; }
+        /* line 32, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+        .about .informations .welcome-message .profile-info .hello span {
+          line-height: 3; }
+      /* line 37, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+      .about .informations .welcome-message .profile-info .profile-title {
+        font-size: 1.5em; }
+      /* line 41, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+      .about .informations .welcome-message .profile-info .profile-position {
+        font-size: 0.9em; }
+    /* line 49, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+    .about .informations .welcome-message ul.profile-list li .title {
+      width: 100%;
+      text-align: center; }
+    /* line 54, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+    .about .informations .welcome-message ul.profile-list li .cont {
+      text-align: center;
+      display: inline-block;
+      width: 100%; }
+    /* line 60, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+    .about .informations .welcome-message ul.profile-list li a {
+      position: absolute;
+      top: 95%;
+      right: 15%; }
+  /* line 72, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+  .about .social-network a {
+    margin: 0 10px; }
+  /* line 79, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+  .tools img {
+    margin-bottom: 20px; }
+  /* line 84, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+  .experiences {
+    text-align: center; }
+    /* line 88, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+    .experiences .row p {
+      text-align: center; }
+    /* line 92, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+    .experiences .row ul {
+      text-align: center; } }
+
+@media screen and (max-width: 769px) {
+  /* line 100, /Volumes/Dev/portfolio-cholez/asset/sass/_responsive.scss */
+  .container-override {
+    width: 100%; } }
